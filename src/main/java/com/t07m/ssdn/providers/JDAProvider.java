@@ -37,7 +37,7 @@ public class JDAProvider {
 			return;
 		jda = JDABuilder
 				.create(app.getConfig().getDiscordToken(),
-						GatewayIntent.GUILD_MESSAGES)
+						GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT)
 				.addEventListeners(new StatusCommandListener(app)).setAutoReconnect(true).build();
 	}
 	

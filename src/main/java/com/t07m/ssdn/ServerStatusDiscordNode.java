@@ -37,7 +37,7 @@ public class ServerStatusDiscordNode extends Application{
 
 	private static final Logger logger = LoggerFactory.getLogger(ServerStatusDiscordNode.class);
 
-	public static final Version VERSION = Version.valueOf("1.0.0");
+	public static final Version VERSION = Version.valueOf("1.0.1");
 
 	public static void main(String[] args) {
 		boolean gui = true;
