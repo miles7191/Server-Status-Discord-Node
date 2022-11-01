@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+        <appender name="CONSOLE"
+                class="ch.qos.logback.core.ConsoleAppender">
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                        <Pattern>
+                                [%d{MM-dd-yy HH:mm:ss}] [%level]: %msg%n
+                        </Pattern>
+                </layout>
+        </appender>
+
+        <logger name="com.t07m" level="info" additivity="false">
+                <appender-ref ref="CONSOLE" />
+        </logger>
+
+        <root level="error">
+                <appender-ref ref="CONSOLE" />
+        </root>
+        <statusListener
+                class="ch.qos.logback.core.status.NopStatusListener" />
+</configuration>
