@@ -53,7 +53,7 @@ public class DiscordEmbedBuilder {
 					app.getSwapMonitor().getUsage5M(2)+"%",
 					app.getSwapMonitor().getUsage15M(2)+"%"), false);
 		if(conf.isReportTemp())
-			eb.addField("CPU Temperatrue:", FormatUtils.formatRow(12,
+			eb.addField("CPU Temperature:", FormatUtils.formatRow(12,
 					app.getTempMonitor().getTemp1M(1)+"°C",
 					app.getTempMonitor().getTemp1M(1)+"°C",
 					app.getTempMonitor().getTemp1M(1)+"°C"), false);
