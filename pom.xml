@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.t07m.ssdn</groupId>
 	<artifactId>Server-Status-Discord-Node</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>Server-Status-Discord-Node</name>
 	<description>Server-Status-Discord-Node</description>
 	<dependencies>

@@ -29,6 +29,26 @@ public class FormatUtils {
 	private static final long MONTH = 30 * DAY;
 	private static final long YEAR = 365 * DAY;
 
+	public static String formatRow(int minWidth, String... collums) {
+		StringBuilder sb = new StringBuilder();
+		for(String s : collums) {
+			sb.append(" ");
+			sb.append(padDiscordMessage(minWidth, s));
+		}
+		return sb.toString();
+	}
+	
+	public static String padDiscordMessage(int minWidth, String msg) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(msg);
+		if(msg.length() < minWidth) {
+			for(int i = 0; i < minWidth-msg.replace("*", "").replace("`", "").length(); i++) {
+				sb.append(" ");
+			}
+		}
+		return sb.toString();
+	}
+	
 	public static String formatUptime(long uptime) {
 		long start = uptime;
 		StringBuilder buf = new StringBuilder();
